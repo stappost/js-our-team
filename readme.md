@@ -8,3 +8,10 @@ MILESTONE 2: Stampare le stesse informazioni su DOM sottoforma di stringhe
 BONUS 1: Trasformare la stringa foto in una immagine effettiva
 BONUS 2: Organizzare i singoli membri in card/schede Consigli del giorno: Ragioniamo come sempre a step. Prima la logica in italiano e poi traduciamo in codice. E ricordiamoci che console.log() è nostro amico!
 Buon lavoro!
+
+SCAFFOLDING
+
+1 - creazione array "dipendenti" con all'interno oggetti;
+2 - per ogni oggetto aggiungere nome, ruolo e immagine;
+3 - creare ciclo che stampi le informazioni di ogni oggetto;
+4 - stampare le stesse informazioni su DOM
