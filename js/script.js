@@ -45,7 +45,10 @@ for(let i=0; i<dipendenti.length; i++){
         if(key == ["image"]){
             card.innerHTML += `<img src="./img/${dipendenti[i][key]}" <br>`;
         }
-        card.innerHTML += dipendenti[i][key] + "<br>";
+        else{
+            card.innerHTML += dipendenti[i][key] + "<br>";
+
+        }
         console.log(dipendenti[i][key]);
     }
     console.log("-----")
