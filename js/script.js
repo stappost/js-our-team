@@ -42,6 +42,9 @@ for(let i=0; i<dipendenti.length; i++){
     card.classList.add("col-4", "p-4");
 
     for(let key in dipendenti[i]){
+        if(key == ["image"]){
+            card.innerHTML += `<img src="./img/${dipendenti[i][key]}" <br>`;
+        }
         card.innerHTML += dipendenti[i][key] + "<br>";
         console.log(dipendenti[i][key]);
     }
