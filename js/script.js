@@ -39,7 +39,7 @@ let container_cards = document.getElementById("container_cards");
 for(let i=0; i<dipendenti.length; i++){
     // CREAZIONE CARD 
     let card = document.createElement("div");
-    card.classList.add("col-4", "p-1", "card", "text-center",);
+    card.classList.add("col-4", "p-1", "card", "text-center");
     // INSERIMENTO DEI DATI IN HTML 
     card.innerHTML += `<img src="./img/${dipendenti[i].image}" <br>`;
     card.innerHTML += `<h3>${dipendenti[i].name}</h3>`;
