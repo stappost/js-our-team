@@ -39,11 +39,11 @@ let container_cards = document.getElementById("container_cards");
 for(let i=0; i<dipendenti.length; i++){
     // CREAZIONE CARD 
     let card = document.createElement("div");
-    card.classList.add("col-4", "p-1", "card", "text-center");
+    card.classList.add("col-3", "p-1", "card", "text-center");
     // INSERIMENTO DEI DATI IN HTML 
     card.innerHTML += `<img src="./img/${dipendenti[i].image}" <br>`;
-    card.innerHTML += `<h3>${dipendenti[i].name}</h3>`;
-    card.innerHTML += `<h3>${dipendenti[i].role}</h3>`;
+    card.innerHTML += `<h2>${dipendenti[i].name}</h2>`;
+    card.innerHTML += `<h5>${dipendenti[i].role}</h5>`;
 
     console.log(dipendenti[i].name);
     console.log(dipendenti[i].role);

@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(243, 243, 231);
+}
+
+img{
+    border-radius: 50%;
+    margin: 20px;
+}
+
+.card:hover img{
+    margin: 0;
+}
+
+h2{
+    color: rgb(1, 1, 195);
+}
+
+h5{
+    color: rgb(136, 136, 136);
+    font-style: italic;
+}
