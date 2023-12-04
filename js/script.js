@@ -37,21 +37,19 @@ let container_cards = document.getElementById("container_cards");
 
 // STAMPIAMO LE INFORMAZIONI IN CONSOLE E IN INDEX HTML
 for(let i=0; i<dipendenti.length; i++){
-
+    // CREAZIONE CARD 
     let card = document.createElement("div");
-    card.classList.add("col-4", "p-3", "card", "text-center");
+    card.classList.add("col-4", "p-1", "card", "text-center",);
+    // INSERIMENTO DEI DATI IN HTML 
+    card.innerHTML += `<img src="./img/${dipendenti[i].image}" <br>`;
+    card.innerHTML += `<h3>${dipendenti[i].name}</h3>`;
+    card.innerHTML += `<h3>${dipendenti[i].role}</h3>`;
 
-    for(let key in dipendenti[i]){
-        if(key == ["image"]){
-            card.innerHTML += `<img src="./img/${dipendenti[i][key]}" <br>`;
-        }
-        else{
-            card.innerHTML += `<h3>${dipendenti[i][key]}</h3>`;
-
-        }
-        console.log(dipendenti[i][key]);
-    }
+    console.log(dipendenti[i].name);
+    console.log(dipendenti[i].role);
+    console.log(dipendenti[i].image);
     console.log("-----")
+
     container_cards.appendChild(card)
 }
 
