@@ -32,10 +32,22 @@ let dipendenti = [
         image: "barbara-ramos-grafic-designer.jpg",
     }
 ]
+// pecuperiamo container cards dall'HTML 
+let container_cards = document.getElementById("container_cards");
 
+// STAMPIAMO LE INFORMAZIONI IN CONSOLE E IN INDEX HTML
 for(let i=0; i<dipendenti.length; i++){
+
+    let card = document.createElement("div");
+    card.classList.add("col-4", "p-4");
+
     for(let key in dipendenti[i]){
-        console.log(dipendenti[i][key])
+        card.innerHTML += dipendenti[i][key] + "<br>";
+        console.log(dipendenti[i][key]);
     }
     console.log("-----")
+    container_cards.appendChild(card)
 }
+
+
+
