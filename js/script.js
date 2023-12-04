@@ -28,8 +28,8 @@ let dipendenti = [
     },
     {
         name: "Barbara Ramos",
-        role: "Grafic Designer",
-        image: "barbara-ramos-grafic-designer.jpg",
+        role: "Graphic Designer",
+        image: "barbara-ramos-graphic-designer.jpg",
     }
 ]
 // pecuperiamo container cards dall'HTML 
