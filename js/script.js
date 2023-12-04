@@ -39,14 +39,14 @@ let container_cards = document.getElementById("container_cards");
 for(let i=0; i<dipendenti.length; i++){
 
     let card = document.createElement("div");
-    card.classList.add("col-4", "p-4");
+    card.classList.add("col-4", "p-3", "card", "text-center");
 
     for(let key in dipendenti[i]){
         if(key == ["image"]){
             card.innerHTML += `<img src="./img/${dipendenti[i][key]}" <br>`;
         }
         else{
-            card.innerHTML += dipendenti[i][key] + "<br>";
+            card.innerHTML += `<h3>${dipendenti[i][key]}</h3>`;
 
         }
         console.log(dipendenti[i][key]);
