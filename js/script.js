@@ -41,10 +41,8 @@ for(let i=0; i<dipendenti.length; i++){
     let card = document.createElement("div");
     card.classList.add("col-3", "p-1", "card", "text-center");
     // INSERIMENTO DEI DATI IN HTML 
-    card.innerHTML += `<img src="./img/${dipendenti[i].image}" <br>`;
-    card.innerHTML += `<h2>${dipendenti[i].name}</h2>`;
-    card.innerHTML += `<h5>${dipendenti[i].role}</h5>`;
-
+    card.innerHTML += `<img src="./img/${dipendenti[i].image}"> <h2>${dipendenti[i].name}</h2> <h5>${dipendenti[i].role}</h5>`;
+    
     console.log(dipendenti[i].name);
     console.log(dipendenti[i].role);
     console.log(dipendenti[i].image);
